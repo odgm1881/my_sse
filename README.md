@@ -1,6 +1,6 @@
 # My SSE Server
 
-Lightweight async HTTP server with Server-Sent Events (SSE) support built from scratch using Python asyncio.
+Simple HTTP server with Server-Sent Events support. Built with asyncio, no dependencies.
 
 ## Features
 
