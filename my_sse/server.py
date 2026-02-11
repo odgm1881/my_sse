@@ -1,6 +1,6 @@
-from infrastructure.exceptions import HTTPException, BadRequest
-from infrastructure.http import Router, Request
-from infrastructure.http_formatter import CreateResponse, response_to_http_sse
+from my_sse.exceptions import HTTPException, BadRequest
+from my_sse.http import Router, Request
+from my_sse.http_formatter import CreateResponse, response_to_http_sse
 
 
 import asyncio

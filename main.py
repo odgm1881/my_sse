@@ -1,6 +1,6 @@
 import asyncio
-from infrastructure.server import Server
-from infrastructure.http import Router, Request, SSEResponse
+from my_sse.server import Server
+from my_sse.http import Router, Request, SSEResponse
 
 
 async def hello(request: Request):
@@ -11,8 +11,6 @@ async def counter(request: Request):
     for i in range(5):
         yield SSEResponse({"count": i})
         await asyncio.sleep(1)
-
-    yield SSEResponse("")
 
 
 async def main():

@@ -29,7 +29,6 @@ async def counter(request: Request):
         yield SSEResponse({"count": i})
         await asyncio.sleep(1)
 
-    yield SSEResponse("")  # End stream
 
 async def main():
     routers = [

@@ -1,6 +1,6 @@
 import json
 
-from infrastructure.http import Response, StatusCode
+from my_sse.http import Response, StatusCode
 
 
 def response_to_http_sse() -> bytes:
