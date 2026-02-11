@@ -16,8 +16,8 @@ Simple HTTP server with Server-Sent Events support. Built with asyncio, no depen
 
 ```python
 import asyncio
-from infrastructure.server import Server
-from infrastructure.http import Router, Request, SSEResponse
+from my_sse.server import Server
+from my_sse.http import Router, Request, SSEResponse
 
 # Regular endpoint
 async def hello(request: Request):
@@ -80,7 +80,7 @@ es.onmessage = (e) => console.log(e.data);
 
 ```
 my_sse/
-├── infrastructure/
+├── my_sse/
 │   ├── exceptions.py      # HTTP exceptions
 │   ├── http.py            # Request, Response, Router, SSEResponse
 │   ├── http_formatter.py  # HTTP response formatting
